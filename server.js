@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true })); // Parses form data (e.g., from
 
 app.use(
   cors({
-    origin:["https://tasty-cloud.netlify.app","https://tastycloudadmin.netlify.app"] // Allow only your frontend
+    origin:["https://tasty-cloud.netlify.app","https://tastycloudadmin.netlify.app"], // Allow only your frontend
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
    credentials: true,
